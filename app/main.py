@@ -4,6 +4,9 @@ from solana.exceptions import SolanaExceptionBase
 from solana.rpc.core import RPCException
 from anchor_client.instructions import *
 from utils import Utils
+from dotenv import load_dotenv
+
+load_dotenv()
 
 RPC_URL = "http://localhost:8899"
 

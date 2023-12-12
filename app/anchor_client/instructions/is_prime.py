@@ -13,19 +13,12 @@ class IsPrimeArgs(typing.TypedDict):
 layout = borsh.CStruct("number" / borsh.U128)
 
 
-class IsPrimeAccounts(typing.TypedDict):
-    payer: Pubkey
-
-
 def is_prime(
     args: IsPrimeArgs,
-    accounts: IsPrimeAccounts,
     program_id: Pubkey = PROGRAM_ID,
     remaining_accounts: typing.Optional[typing.List[AccountMeta]] = None,
 ) -> Instruction:
-    keys: list[AccountMeta] = [
-        AccountMeta(pubkey=accounts["payer"], is_signer=True, is_writable=True)
-    ]
+    keys: list[AccountMeta] = []
     if remaining_accounts is not None:
         keys += remaining_accounts
     identifier = b"p\xaf\x16\xcb\xf1iu\x1c"

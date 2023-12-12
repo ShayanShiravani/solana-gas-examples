@@ -18,24 +18,19 @@ init = initialize({
     "payer": signer.pubkey()
 })
 bitwiseOperation = bitwise_operation(
-    {"input": 11111111111111},
-    {"payer": signer.pubkey()}
+    {"input": 11111111111111}
 )
 sumOfNaturalNumbers = sum_of_natural_numbers(
-    {"end": 8},
-    {"payer": signer.pubkey()}
+    {"end": 8}
 )
 isPrime = is_prime(
-    {"number": 24},
-    {"payer": signer.pubkey()}
+    {"number": 24}
 )
 nthPrime = nth_prime(
-    {"n": 10},
-    {"payer": signer.pubkey()}
+    {"n": 10}
 )
 fib = fibonacci(
-    {"n": 19},
-    {"payer": signer.pubkey()}
+    {"n": 19}
 )
 
 txn = Transaction().add(init)

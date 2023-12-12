@@ -4,11 +4,11 @@ from anchorpy.error import ProgramError
 
 class NotPositiveInt(ProgramError):
     def __init__(self) -> None:
-        super().__init__(6000, "Input must be a positive integer.")
+        super().__init__(6000, "Input must be a positive integer")
 
     code = 6000
     name = "NotPositiveInt"
-    msg = "Input must be a positive integer."
+    msg = "Input must be a positive integer"
 
 
 CustomError = typing.Union[NotPositiveInt]

@@ -94,10 +94,7 @@ pub struct Initialize<'info> {
 }
 
 #[derive(Accounts)]
-pub struct Operation<'info> {
-    #[account(mut)]
-    pub payer: Signer<'info>,
-}
+pub struct Operation<> {}
 
 #[error_code]
 pub enum MyError {

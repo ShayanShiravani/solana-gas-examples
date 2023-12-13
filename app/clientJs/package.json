@@ -1,0 +1,19 @@
+{
+  "name": "solana-gas-consumption-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.6",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.3.1"
+  },
+  "type": "module"
+}

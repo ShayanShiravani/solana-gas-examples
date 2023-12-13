@@ -6,4 +6,4 @@ target
 node_modules
 test-ledger
 app/venv
-app/.env
+.env

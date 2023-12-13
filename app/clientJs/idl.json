@@ -1,0 +1,82 @@
+{
+  "version": "0.1.0",
+  "name": "solana_gas_consumption_examples",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "payer",
+          "isMut": true,
+          "isSigner": true
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "bitwiseOperation",
+      "accounts": [],
+      "args": [
+        {
+          "name": "input",
+          "type": "u128"
+        }
+      ],
+      "returns": "u128"
+    },
+    {
+      "name": "sumOfNaturalNumbers",
+      "accounts": [],
+      "args": [
+        {
+          "name": "end",
+          "type": "u128"
+        }
+      ],
+      "returns": "u128"
+    },
+    {
+      "name": "isPrime",
+      "accounts": [],
+      "args": [
+        {
+          "name": "number",
+          "type": "u128"
+        }
+      ],
+      "returns": "bool"
+    },
+    {
+      "name": "nthPrime",
+      "accounts": [],
+      "args": [
+        {
+          "name": "n",
+          "type": "u128"
+        }
+      ],
+      "returns": "u128"
+    },
+    {
+      "name": "fibonacci",
+      "accounts": [],
+      "args": [
+        {
+          "name": "n",
+          "type": "u128"
+        }
+      ],
+      "returns": "u128"
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "NotPositiveInt",
+      "msg": "Input must be a positive integer"
+    }
+  ],
+  "metadata": {
+    "address": "DBYZWu2VUr2LypbdN3dh6GKKGxRCi2cyEXGRjPByMTZf"
+  }
+}
